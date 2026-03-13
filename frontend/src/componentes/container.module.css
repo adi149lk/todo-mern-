@@ -1,0 +1,7 @@
+.bo {
+  width: 70%;
+  min-width: 200px;
+  border: 2px solid lightcoral;
+  padding: 20px;
+  margin: 30px;
+}

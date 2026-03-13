@@ -1,0 +1,32 @@
+.ad {
+  background-color: rgb(235, 231, 189);
+  color: blueviolet;
+  font-weight: 500;
+}
+
+.main {
+  width: 55%;
+  min-width: 200px;
+  margin: 50px auto;
+}
+
+.item-container {
+  text-align: left;
+  padding-left: 32px;
+}
+
+.kg-button {
+  min-width: 74px;
+}
+
+.kg-row {
+  margin: 10px 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.h {
+  max-width: 840px;
+}
