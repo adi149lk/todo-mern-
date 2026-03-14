@@ -4,8 +4,7 @@ const { default: mongoose } = require("mongoose");
 const errcontroller = require("./controllers/ere404");
 const apiRo = require("./routes/api");
 const PORT = 3001;
-const dbPath =
-  
+const dbPath = "please give path of your database";
 
 const app = express();
 
