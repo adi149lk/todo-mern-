@@ -5,7 +5,7 @@ const errcontroller = require("./controllers/ere404");
 const apiRo = require("./routes/api");
 const PORT = 3001;
 const dbPath =
-  "";
+  
 
 const app = express();
 

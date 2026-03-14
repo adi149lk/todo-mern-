@@ -3,6 +3,7 @@ export const provid = createContext({
   items: {},
   handler1: () => {},
   handler2: () => {},
+  handler3: () => {},
 });
 let Reducer = (state, action) => {
   let newItems = state;
@@ -86,9 +87,17 @@ let ContextProvider = ({ children }) => {
     console.log("deleted todo id is", deletedId);
     Dispatcher(action);
   };
+  const handler3 = async (el, e) => {
+    const response = await fetch(`http://localhost:3001/api/${el._id}`, {
+      method: "PUT",
+    });
+    const data = await response.json();
+
+    console.log("completed", data.task);
+  };
 
   return (
-    <provid.Provider value={{ items, handler1, handler2 }}>
+    <provid.Provider value={{ items, handler1, handler2, handler3 }}>
       {children}
     </provid.Provider>
   );

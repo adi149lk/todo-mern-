@@ -1,0 +1,72 @@
+.it-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin: 12px 0;
+  padding: 18px 24px;
+  transition: box-shadow 0.2s;
+}
+
+.it-row:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+  background: #f1f7ff;
+}
+
+.it-name {
+  flex: 2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  letter-spacing: 0.02em;
+}
+
+.it-date {
+  flex: 1;
+  color: #888;
+  font-size: 0.98rem;
+  text-align: right;
+}
+
+.it-actions {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.it-completed {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.it-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 18px;
+  font-size: 1rem;
+  border: none;
+  transition: background 0.18s, color 0.18s;
+}
+
+.it-btn.delete {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+.it-btn.delete:hover {
+  background: #d9363e;
+}
+
+.it-btn.complete {
+  background: #4caf50;
+  color: #fff;
+}
+
+.it-btn.complete:hover {
+  background: #388e3c;
+}
